@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,table,tbody,p,th,td{ -webkit-text-size-adjust:none; margin: 0; padding: 0; border: none; -webkit-tap-highlight-color:rgba(0,0,0,0); font-size: 1em; font-family:"Microsoft Yahei","微软雅黑",Tahoma,Arial,Helvetica ,STHeiti; color: #4c4948; }
+html,body{ min-height:100%; }
+img,input,button,a,select,textarea{ margin: 0; padding: 0; resize:none; border:none; outline:none; }
+ol,ul { list-style:none; }
+h1,h2,h3,h4,h5,h6,p,em{ font-size:100%; word-wrap:break-word; font-weight: normal; font-style: normal; }
+a:active, a:focus{ outline:none; }
+button::-moz-focus-inner,input::-moz-focus-inner{ padding:0; border:0; }
+table{ border-collapse:collapse; border-spacing:0; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; font-size:0; }
+.clearfix{ zoom:1; }
+a{ color: #4c4948; text-decoration: none; }
+
+.img{ width: 190px; height: 120px; padding: 3px; border: 1px solid #ccc; position: absolute;z-index: 12; top: 50px; left: 50%;
+    margin-left: -95px; }
+/*动画名字， 动画运行的时间，alternate平滑过渡， infinite是反复执行*/
+.imgAnimation{
+    animation-name: imgAnimation;
+    animation: imgAnimation 2s alternate infinite;
+    -webkit-animation: imgAnimation 2s alternate infinite;
+    -moz-animation: imgAnimation 2s alternate infinite;
+}
+ @-webkit-keyframes imgAnimation{
+   0%{ left: -198px}
+   100%{ left: 50%;}
+}
+ @-moz-keyframes imgAnimation{
+   0%{ left: -198px}
+   100%{ left: 50%;}
+}
+
+@-webkit-keyframes imgAnimation{
+    0%{ opacity: 0}
+    50%{ opacity: 0.5}
+    100%{ opacity: 1}
+}
+@-moz-keyframes imgAnimation{
+    0%{ opacity: 0}
+    50%{ opacity: 0.5}
+    100%{ opacity: 1}
+}
